@@ -26,58 +26,50 @@ public class CategoriaControllerImpl implements CategoriaController {
     @Autowired
     private CategoriaService categoriaService;
 
-    @Autowired
-    private ModelMapper modelMapper;
+    @Autowired // Anotação para injeção de dependência do serviço de categorias
+    private ModelMapper modelMapper; // Injeção de dependência do ModelMapper para conversão entre entidades e DTOs
 
-    @GetMapping("/{id}")
+    @GetMapping("/{id}") // Método para buscar uma categoria pelo ID
     public ResponseEntity<CategoriaDto> findById(@PathVariable Integer id) {
         Categoria cat = categoriaService.findById(id);
         return ResponseEntity.ok().body(modelMapper.map(cat, CategoriaDto.class));
     }
 
-    @GetMapping
+    @GetMapping // Método para listar todas as categorias
     public ResponseEntity<List<CategoriaDto>> findAll() {
         List<Categoria> list = categoriaService.findAll();
-        //return ResponseEntity.ok().body(list.stream().map(obj -> modelMapper.map(obj, CategoriaDto.class)).collect(Collectors.toList()));
         List<CategoriaDto> listDto = new ArrayList<>();
 
         for (Categoria categoria : list) {
             listDto.add(modelMapper.map(categoria, CategoriaDto.class));
         }
-
         return ResponseEntity.ok().body(listDto);
     }
 
-    @Override
-    @GetMapping("/nome/{nome}")
+    @GetMapping("/nome/{nome}") // Método para buscar uma categoria pelo nome
     public ResponseEntity<CategoriaDto> findByNome(@PathVariable String nome) {
         Categoria cat = categoriaService.findByNome(nome);
         return ResponseEntity.ok().body(modelMapper.map(cat, CategoriaDto.class));
 
     }
 
-    @PostMapping
+    @PostMapping // Método para criar uma nova categoria
     public ResponseEntity<CategoriaDto> save(@RequestBody CategoriaDto categoriaDto) {
         Categoria cat = categoriaService.save(modelMapper.map(categoriaDto, Categoria.class));
         return ResponseEntity.ok().body(modelMapper.map(cat, CategoriaDto.class));
     }
 
-    @Override
-    public ResponseEntity<CategoriaDto> update(Integer id, CategoriaDto categoriaDto) {
-        return null;
+    @PutMapping("/{id}") // Método para atualizar uma categoria existente
+    public ResponseEntity<CategoriaDto> update(@PathVariable Integer id, @RequestBody CategoriaDto categoriaDto) {
+        categoriaDto.setId(id);
+        Categoria cat = categoriaService.update(modelMapper.map(categoriaDto, Categoria.class));
+        return ResponseEntity.ok().body(modelMapper.map(cat, CategoriaDto.class));
     }
 
-    @PutMapping("/{id}")
-    public Categoria update(@PathVariable Integer id, @RequestBody Categoria categoria) {
-        categoria.setId(id);
-        Categoria cat = categoriaService.update(categoria);
-        return cat;
-    }
-
-    @DeleteMapping("/{id}")
-    public void delete(@PathVariable Integer id) {
+    @DeleteMapping("/{id}") // Método para deletar uma categoria pelo ID
+    public ResponseEntity<Void> delete(@PathVariable Integer id) {
         categoriaService.delete(id);
-
+        return ResponseEntity.noContent().build(); // Retorna uma resposta sem conteúdo (204 No Content)
     }
 
 }

@@ -16,7 +16,8 @@ public class TestProfile {
     private DBService dbService;
 
     @Bean
-    public void instaciaDB() {
+    public DBService instaciaDB() {
         this.dbService.instanciaDB();
+        return null;
     }
 }

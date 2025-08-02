@@ -17,6 +17,7 @@ public class CategoriaDto implements Serializable {
     // construtor vazio necessário para a serialização
     public CategoriaDto() {
     }
+
     // construtor com parâmetros
     public CategoriaDto(Integer id, String nome, String descricao) {
         this.id = id;
