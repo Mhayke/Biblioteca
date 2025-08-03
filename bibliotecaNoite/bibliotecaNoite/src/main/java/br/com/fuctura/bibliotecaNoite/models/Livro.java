@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "tb_livro")
+@Table(name = "livros")
 public class Livro {
 
     @Id
@@ -14,7 +14,7 @@ public class Livro {
     private Integer id;
     private String titulo;
     private String autor;
-    private String texto;
+    private String sinopse;
 
     @JsonIgnore
     @ManyToOne
@@ -26,11 +26,11 @@ public class Livro {
     public Livro() {
     }
 
-    public Livro(Integer id, String titulo, String autor, String texto, Tamanho tamanho, Categoria categoria) {
+    public Livro(Integer id, String titulo, String autor, String sinopse, Tamanho tamanho, Categoria categoria) {
         this.id = id;
         this.titulo = titulo;
         this.autor = autor;
-        this.texto = texto;
+        this.sinopse = sinopse;
         this.categoria = categoria;
         this.tamanho = tamanho;
     }
@@ -60,11 +60,11 @@ public class Livro {
     }
 
     public String getTexto() {
-        return texto;
+        return sinopse;
     }
 
     public void setTexto(String texto) {
-        this.texto = texto;
+        this.sinopse = texto;
     }
 
     public Categoria getCategoria() {
