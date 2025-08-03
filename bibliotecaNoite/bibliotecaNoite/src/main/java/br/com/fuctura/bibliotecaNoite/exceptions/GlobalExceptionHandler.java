@@ -9,6 +9,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 import javax.servlet.http.HttpServletRequest;
 import java.time.Instant;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @ControllerAdvice // Anotação que indica que esta classe é um manipulador global de exceções
 public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
@@ -44,8 +45,5 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
                 request.getRequestURI()); // URI da requisição que causou o erro
         return ResponseEntity.status(HttpStatus.CONFLICT).body(error); // Retorna uma resposta com o status 404 (Not Found) e o corpo contendo os detalhes do erro
     }
-
-
-
 
 }

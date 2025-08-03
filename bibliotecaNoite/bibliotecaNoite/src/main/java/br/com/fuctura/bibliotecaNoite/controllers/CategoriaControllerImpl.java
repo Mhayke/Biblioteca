@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -54,13 +55,13 @@ public class CategoriaControllerImpl implements CategoriaController {
     }
 
     @PostMapping // Método para criar uma nova categoria
-    public ResponseEntity<CategoriaDto> save(@RequestBody CategoriaDto categoriaDto) {
+    public ResponseEntity<CategoriaDto> save(@Valid @RequestBody CategoriaDto categoriaDto) {
         Categoria cat = categoriaService.save(modelMapper.map(categoriaDto, Categoria.class));
         return ResponseEntity.ok().body(modelMapper.map(cat, CategoriaDto.class));
     }
 
     @PutMapping("/{id}") // Método para atualizar uma categoria existente
-    public ResponseEntity<CategoriaDto> update(@PathVariable Integer id, @RequestBody CategoriaDto categoriaDto) {
+    public ResponseEntity<CategoriaDto> update(@Valid @PathVariable Integer id, @RequestBody CategoriaDto categoriaDto) {
         categoriaDto.setId(id);
         Categoria cat = categoriaService.update(modelMapper.map(categoriaDto, Categoria.class));
         return ResponseEntity.ok().body(modelMapper.map(cat, CategoriaDto.class));
