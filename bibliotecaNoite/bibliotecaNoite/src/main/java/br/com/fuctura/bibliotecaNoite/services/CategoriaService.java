@@ -4,6 +4,7 @@ import br.com.fuctura.bibliotecaNoite.exceptions.DataIntegrityViolationException
 import br.com.fuctura.bibliotecaNoite.exceptions.IllegalArgumentException;
 import br.com.fuctura.bibliotecaNoite.exceptions.NotFoundException;
 import br.com.fuctura.bibliotecaNoite.models.Categoria;
+import br.com.fuctura.bibliotecaNoite.models.Livro;
 import br.com.fuctura.bibliotecaNoite.repositories.CategoriaRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -111,5 +113,6 @@ public class CategoriaService {
         log.error("Categoria não encontrada com o nome: {}", nome); // Loga o erro se a categoria não for encontrada
         throw new NotFoundException("Categoria não encontrada com o nome: " + nome);
     }
+
 
 }

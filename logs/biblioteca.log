@@ -111,3 +111,414 @@ org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (
 2025-08-03 22:22:48.385  WARN 16560 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
 2025-08-03 22:22:48.385  INFO 16560 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-08-03 22:22:48.450  INFO 16560 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-03 22:53:03.350  INFO 13928 --- [restartedMain] b.c.f.b.BibliotecaNoiteApplication       : Starting BibliotecaNoiteApplication using Java 21.0.6 on Mike with PID 13928 (E:\bibliotecaNoite\bibliotecaNoite\bibliotecaNoite\target\classes started by matth in E:\bibliotecaNoite)
+2025-08-03 22:53:03.351  INFO 13928 --- [restartedMain] b.c.f.b.BibliotecaNoiteApplication       : The following 1 profile is active: "test"
+2025-08-03 22:53:03.387  INFO 13928 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-03 22:53:03.387  INFO 13928 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-03 22:53:03.844  INFO 13928 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-03 22:53:03.925  INFO 13928 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 2 JPA repository interfaces.
+2025-08-03 22:53:04.405  INFO 13928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-08-03 22:53:04.414  INFO 13928 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-03 22:53:04.414  INFO 13928 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2025-08-03 22:53:04.480  INFO 13928 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-03 22:53:04.481  INFO 13928 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1094 ms
+2025-08-03 22:53:04.508  INFO 13928 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-03 22:53:04.641  INFO 13928 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-03 22:53:04.648  INFO 13928 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testbn'
+2025-08-03 22:53:04.762  INFO 13928 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-03 22:53:04.807  INFO 13928 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-08-03 22:53:04.930  INFO 13928 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-08-03 22:53:05.011  INFO 13928 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-08-03 22:53:05.412  INFO 13928 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-08-03 22:53:05.418  INFO 13928 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-03 22:53:05.864  WARN 13928 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-03 22:53:06.160  INFO 13928 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-03 22:53:06.195  INFO 13928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-08-03 22:53:06.205  INFO 13928 --- [restartedMain] b.c.f.b.BibliotecaNoiteApplication       : Started BibliotecaNoiteApplication in 3.166 seconds (JVM running for 3.539)
+2025-08-03 22:53:28.922  INFO 13928 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-03 22:53:28.923  INFO 13928 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-03 22:53:28.924  INFO 13928 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-03 22:53:28.947  INFO 13928 --- [http-nio-8080-exec-3] b.c.f.b.services.LivroService            : Listando todos os livros de todas as categorias
+2025-08-03 22:53:28.953  INFO 13928 --- [http-nio-8080-exec-3] b.c.f.b.services.CategoriaService        : Listando todas as categorias
+2025-08-03 22:53:29.032  INFO 13928 --- [http-nio-8080-exec-3] b.c.f.b.services.CategoriaService        : Total de categorias encontradas: 20
+2025-08-03 22:53:29.050  INFO 13928 --- [http-nio-8080-exec-3] b.c.f.b.services.LivroService            : Total de livros encontrados: 40
+2025-08-03 22:54:23.095  INFO 13928 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-03 22:54:23.301 ERROR 13928 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Error thrown while acquiring connection from data source
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:188) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1375) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.getAutoCommit(JdbcConnection.java:423) ~[h2-2.1.214.jar:2.1.214]
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:412) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712) ~[HikariCP-4.0.3.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-08-03 22:54:23.500  WARN 13928 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2025-08-03 22:54:23.500  INFO 13928 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-03 22:54:23.562  INFO 13928 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-03 23:02:42.956  INFO 9584 --- [restartedMain] b.c.f.b.BibliotecaNoiteApplication       : Starting BibliotecaNoiteApplication using Java 21.0.6 on Mike with PID 9584 (E:\bibliotecaNoite\bibliotecaNoite\bibliotecaNoite\target\classes started by matth in E:\bibliotecaNoite)
+2025-08-03 23:02:42.957  INFO 9584 --- [restartedMain] b.c.f.b.BibliotecaNoiteApplication       : The following 1 profile is active: "test"
+2025-08-03 23:02:42.995  INFO 9584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-03 23:02:42.995  INFO 9584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-03 23:02:43.446  INFO 9584 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-03 23:02:43.489  INFO 9584 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 2 JPA repository interfaces.
+2025-08-03 23:02:43.987  INFO 9584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-08-03 23:02:43.997  INFO 9584 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-03 23:02:43.997  INFO 9584 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2025-08-03 23:02:44.065  INFO 9584 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-03 23:02:44.065  INFO 9584 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1069 ms
+2025-08-03 23:02:44.090  INFO 9584 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-03 23:02:44.233  INFO 9584 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-03 23:02:44.241  INFO 9584 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testbn'
+2025-08-03 23:02:44.357  INFO 9584 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-03 23:02:44.407  INFO 9584 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-08-03 23:02:44.524  INFO 9584 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-08-03 23:02:44.610  INFO 9584 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-08-03 23:02:45.018  INFO 9584 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-08-03 23:02:45.024  INFO 9584 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-03 23:02:45.486  WARN 9584 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-03 23:02:45.739  INFO 9584 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-03 23:02:45.769  INFO 9584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-08-03 23:02:45.777  INFO 9584 --- [restartedMain] b.c.f.b.BibliotecaNoiteApplication       : Started BibliotecaNoiteApplication in 3.135 seconds (JVM running for 3.505)
+2025-08-03 23:02:58.227  INFO 9584 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-03 23:02:58.227  INFO 9584 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-03 23:02:58.228  INFO 9584 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-08-03 23:02:58.253  INFO 9584 --- [http-nio-8080-exec-1] b.c.f.b.services.LivroService            : Listando todos os livros de todas as categorias
+2025-08-03 23:02:58.258  INFO 9584 --- [http-nio-8080-exec-1] b.c.f.b.services.CategoriaService        : Listando todas as categorias
+2025-08-03 23:02:58.333  INFO 9584 --- [http-nio-8080-exec-1] b.c.f.b.services.CategoriaService        : Total de categorias encontradas: 20
+2025-08-03 23:02:58.357  INFO 9584 --- [http-nio-8080-exec-1] b.c.f.b.services.LivroService            : Total de livros encontrados: 40
+2025-08-03 23:04:26.001  INFO 9584 --- [http-nio-8080-exec-5] b.c.f.b.services.LivroService            : Buscando livro com o ID: 2
+2025-08-03 23:04:26.005  INFO 9584 --- [http-nio-8080-exec-5] b.c.f.b.services.LivroService            : Livro encontrado com o ID: 2
+2025-08-03 23:04:29.493  INFO 9584 --- [http-nio-8080-exec-6] b.c.f.b.services.LivroService            : Buscando livro com o ID: 6
+2025-08-03 23:04:29.495  INFO 9584 --- [http-nio-8080-exec-6] b.c.f.b.services.LivroService            : Livro encontrado com o ID: 6
+2025-08-03 23:04:35.948  INFO 9584 --- [http-nio-8080-exec-7] b.c.f.b.services.LivroService            : Buscando livro com o ID: 39
+2025-08-03 23:04:35.949  INFO 9584 --- [http-nio-8080-exec-7] b.c.f.b.services.LivroService            : Livro encontrado com o ID: 39
+2025-08-03 23:07:45.493  INFO 9584 --- [http-nio-8080-exec-10] b.c.f.b.services.LivroService            : Listando todos os livros de todas as categorias
+2025-08-03 23:07:45.494  INFO 9584 --- [http-nio-8080-exec-10] b.c.f.b.services.CategoriaService        : Listando todas as categorias
+2025-08-03 23:07:45.497  INFO 9584 --- [http-nio-8080-exec-10] b.c.f.b.services.CategoriaService        : Total de categorias encontradas: 20
+2025-08-03 23:07:45.508  INFO 9584 --- [http-nio-8080-exec-10] b.c.f.b.services.LivroService            : Total de livros encontrados: 40
+2025-08-03 23:07:48.495  INFO 9584 --- [http-nio-8080-exec-2] b.c.f.b.services.LivroService            : Listando todos os livros de todas as categorias
+2025-08-03 23:07:48.495  INFO 9584 --- [http-nio-8080-exec-2] b.c.f.b.services.CategoriaService        : Listando todas as categorias
+2025-08-03 23:07:48.498  INFO 9584 --- [http-nio-8080-exec-2] b.c.f.b.services.CategoriaService        : Total de categorias encontradas: 20
+2025-08-03 23:07:48.508  INFO 9584 --- [http-nio-8080-exec-2] b.c.f.b.services.LivroService            : Total de livros encontrados: 40
+2025-08-03 23:08:10.678  WARN 9584 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "autor"]
+2025-08-03 23:08:34.384  INFO 9584 --- [http-nio-8080-exec-4] b.c.f.b.services.LivroService            : Buscando livro pelo autor: null
+2025-08-03 23:08:34.392 ERROR 9584 --- [http-nio-8080-exec-4] b.c.f.b.services.LivroService            : Livro não encontrado pelo autor: null
+2025-08-03 23:08:34.398  WARN 9584 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [br.com.fuctura.bibliotecaNoite.exceptions.NotFoundException: Livro não encontrado pelo autor: null]
+2025-08-03 23:09:10.509  INFO 9584 --- [http-nio-8080-exec-5] b.c.f.b.services.LivroService            : Listando todos os livros de todas as categorias
+2025-08-03 23:09:10.510  INFO 9584 --- [http-nio-8080-exec-5] b.c.f.b.services.CategoriaService        : Listando todas as categorias
+2025-08-03 23:09:10.512  INFO 9584 --- [http-nio-8080-exec-5] b.c.f.b.services.CategoriaService        : Total de categorias encontradas: 20
+2025-08-03 23:09:10.520  INFO 9584 --- [http-nio-8080-exec-5] b.c.f.b.services.LivroService            : Total de livros encontrados: 40
+2025-08-03 23:09:31.519  INFO 9584 --- [http-nio-8080-exec-6] b.c.f.b.services.LivroService            : Deletando livro com o ID: 1
+2025-08-03 23:09:31.527  INFO 9584 --- [http-nio-8080-exec-6] b.c.f.b.services.LivroService            : Livro deletado com sucesso: 1
+2025-08-03 23:09:37.022  INFO 9584 --- [http-nio-8080-exec-7] b.c.f.b.services.LivroService            : Listando todos os livros de todas as categorias
+2025-08-03 23:09:37.022  INFO 9584 --- [http-nio-8080-exec-7] b.c.f.b.services.CategoriaService        : Listando todas as categorias
+2025-08-03 23:09:37.023  INFO 9584 --- [http-nio-8080-exec-7] b.c.f.b.services.CategoriaService        : Total de categorias encontradas: 20
+2025-08-03 23:09:37.030  INFO 9584 --- [http-nio-8080-exec-7] b.c.f.b.services.LivroService            : Total de livros encontrados: 39
+2025-08-03 23:09:53.001  INFO 9584 --- [http-nio-8080-exec-8] b.c.f.b.services.LivroService            : Buscando livro com o ID: 40
+2025-08-03 23:09:53.003  INFO 9584 --- [http-nio-8080-exec-8] b.c.f.b.services.LivroService            : Livro encontrado com o ID: 40
+2025-08-03 23:09:55.755  INFO 9584 --- [http-nio-8080-exec-9] b.c.f.b.services.LivroService            : Buscando livro com o ID: 41
+2025-08-03 23:09:55.756 ERROR 9584 --- [http-nio-8080-exec-9] b.c.f.b.services.LivroService            : Livro não encontrado com o ID: 41
+2025-08-03 23:09:55.757  WARN 9584 --- [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [br.com.fuctura.bibliotecaNoite.exceptions.NotFoundException: Livro não encontrado com o ID: 41]
+2025-08-03 23:10:02.140  INFO 9584 --- [http-nio-8080-exec-10] b.c.f.b.services.LivroService            : Buscando livro com o ID: 1
+2025-08-03 23:10:02.141 ERROR 9584 --- [http-nio-8080-exec-10] b.c.f.b.services.LivroService            : Livro não encontrado com o ID: 1
+2025-08-03 23:10:02.142  WARN 9584 --- [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [br.com.fuctura.bibliotecaNoite.exceptions.NotFoundException: Livro não encontrado com o ID: 1]
+2025-08-03 23:10:13.278  INFO 9584 --- [http-nio-8080-exec-2] b.c.f.b.services.LivroService            : Listando todos os livros de todas as categorias
+2025-08-03 23:10:13.278  INFO 9584 --- [http-nio-8080-exec-2] b.c.f.b.services.CategoriaService        : Listando todas as categorias
+2025-08-03 23:10:13.281  INFO 9584 --- [http-nio-8080-exec-2] b.c.f.b.services.CategoriaService        : Total de categorias encontradas: 20
+2025-08-03 23:10:13.287  INFO 9584 --- [http-nio-8080-exec-2] b.c.f.b.services.LivroService            : Total de livros encontrados: 39
+2025-08-03 23:11:58.852  INFO 9584 --- [http-nio-8080-exec-4] b.c.f.b.services.LivroService            : Atualizando livro com o ID: 3
+2025-08-03 23:11:58.852  INFO 9584 --- [http-nio-8080-exec-4] b.c.f.b.services.LivroService            : Livro atualizado com sucesso: Java e foda!
+2025-08-03 23:12:14.409  INFO 9584 --- [http-nio-8080-exec-5] b.c.f.b.services.LivroService            : Listando todos os livros de todas as categorias
+2025-08-03 23:12:14.410  INFO 9584 --- [http-nio-8080-exec-5] b.c.f.b.services.CategoriaService        : Listando todas as categorias
+2025-08-03 23:12:14.411  INFO 9584 --- [http-nio-8080-exec-5] b.c.f.b.services.CategoriaService        : Total de categorias encontradas: 20
+2025-08-03 23:12:14.418  INFO 9584 --- [http-nio-8080-exec-5] b.c.f.b.services.LivroService            : Total de livros encontrados: 38
+2025-08-03 23:12:55.059  INFO 9584 --- [http-nio-8080-exec-6] b.c.f.b.services.LivroService            : Atualizando livro com o ID: 3
+2025-08-03 23:12:55.060  INFO 9584 --- [http-nio-8080-exec-6] b.c.f.b.services.LivroService            : Livro atualizado com sucesso: Java e foda!
+2025-08-03 23:13:15.348  INFO 9584 --- [http-nio-8080-exec-7] b.c.f.b.services.LivroService            : Atualizando livro com o ID: 3
+2025-08-03 23:13:15.348  INFO 9584 --- [http-nio-8080-exec-7] b.c.f.b.services.LivroService            : Livro atualizado com sucesso: Java e foda!
+2025-08-03 23:13:21.767  INFO 9584 --- [http-nio-8080-exec-8] b.c.f.b.services.LivroService            : Listando todos os livros de todas as categorias
+2025-08-03 23:13:21.767  INFO 9584 --- [http-nio-8080-exec-8] b.c.f.b.services.CategoriaService        : Listando todas as categorias
+2025-08-03 23:13:21.768  INFO 9584 --- [http-nio-8080-exec-8] b.c.f.b.services.CategoriaService        : Total de categorias encontradas: 20
+2025-08-03 23:13:21.774  INFO 9584 --- [http-nio-8080-exec-8] b.c.f.b.services.LivroService            : Total de livros encontrados: 38
+2025-08-03 23:13:48.641  INFO 9584 --- [http-nio-8080-exec-9] b.c.f.b.services.LivroService            : Atualizando livro com o ID: 2
+2025-08-03 23:13:48.641  INFO 9584 --- [http-nio-8080-exec-9] b.c.f.b.services.LivroService            : Livro atualizado com sucesso: Java e foda!
+2025-08-03 23:13:59.440  INFO 9584 --- [http-nio-8080-exec-10] b.c.f.b.services.LivroService            : Listando todos os livros de todas as categorias
+2025-08-03 23:13:59.440  INFO 9584 --- [http-nio-8080-exec-10] b.c.f.b.services.CategoriaService        : Listando todas as categorias
+2025-08-03 23:13:59.441  INFO 9584 --- [http-nio-8080-exec-10] b.c.f.b.services.CategoriaService        : Total de categorias encontradas: 20
+2025-08-03 23:13:59.446  INFO 9584 --- [http-nio-8080-exec-10] b.c.f.b.services.LivroService            : Total de livros encontrados: 37
+2025-08-03 23:20:39.231  INFO 9584 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-03 23:20:39.433 ERROR 9584 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Error thrown while acquiring connection from data source
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:188) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.checkSuspended(SessionLocal.java:1240) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.transitionToState(SessionLocal.java:1232) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.waitIfExclusiveModeEnabled(SessionLocal.java:1480) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Command.executeQuery(Command.java:180) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:538) ~[h2-2.1.214.jar:2.1.214]
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:408) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712) ~[HikariCP-4.0.3.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-08-03 23:20:39.631  WARN 9584 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2025-08-03 23:20:39.631  INFO 9584 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-03 23:20:39.693  INFO 9584 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-03 23:20:41.806  INFO 14236 --- [restartedMain] b.c.f.b.BibliotecaNoiteApplication       : Starting BibliotecaNoiteApplication using Java 21.0.6 on Mike with PID 14236 (E:\bibliotecaNoite\bibliotecaNoite\bibliotecaNoite\target\classes started by matth in E:\bibliotecaNoite)
+2025-08-03 23:20:41.807  INFO 14236 --- [restartedMain] b.c.f.b.BibliotecaNoiteApplication       : The following 1 profile is active: "test"
+2025-08-03 23:20:41.842  INFO 14236 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-03 23:20:41.843  INFO 14236 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-03 23:20:42.315  INFO 14236 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-03 23:20:42.355  INFO 14236 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 2 JPA repository interfaces.
+2025-08-03 23:20:42.870  INFO 14236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-08-03 23:20:42.879  INFO 14236 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-03 23:20:42.879  INFO 14236 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2025-08-03 23:20:42.948  INFO 14236 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-03 23:20:42.948  INFO 14236 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1105 ms
+2025-08-03 23:20:42.969  INFO 14236 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-03 23:20:43.110  INFO 14236 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-03 23:20:43.119  INFO 14236 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testbn'
+2025-08-03 23:20:43.232  INFO 14236 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-03 23:20:43.280  INFO 14236 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-08-03 23:20:43.387  INFO 14236 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-08-03 23:20:43.466  INFO 14236 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-08-03 23:20:43.886  INFO 14236 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-08-03 23:20:43.893  INFO 14236 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-03 23:20:44.366  WARN 14236 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-03 23:20:44.629  INFO 14236 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-03 23:20:44.660  INFO 14236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-08-03 23:20:44.669  INFO 14236 --- [restartedMain] b.c.f.b.BibliotecaNoiteApplication       : Started BibliotecaNoiteApplication in 3.17 seconds (JVM running for 3.534)
+2025-08-03 23:20:56.262  INFO 14236 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-03 23:20:56.262  INFO 14236 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-03 23:20:56.264  INFO 14236 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-03 23:20:56.290  INFO 14236 --- [http-nio-8080-exec-3] b.c.f.b.services.LivroService            : Listando todos os livros de todas as categorias
+2025-08-03 23:20:56.295  INFO 14236 --- [http-nio-8080-exec-3] b.c.f.b.services.CategoriaService        : Listando todas as categorias
+2025-08-03 23:20:56.369  INFO 14236 --- [http-nio-8080-exec-3] b.c.f.b.services.CategoriaService        : Total de categorias encontradas: 20
+2025-08-03 23:20:56.389  INFO 14236 --- [http-nio-8080-exec-3] b.c.f.b.services.LivroService            : Total de livros encontrados: 40
+2025-08-03 23:21:11.613  INFO 14236 --- [http-nio-8080-exec-2] b.c.f.b.services.LivroService            : Buscando livro com o ID: 5
+2025-08-03 23:21:11.616  INFO 14236 --- [http-nio-8080-exec-2] b.c.f.b.services.LivroService            : Livro encontrado com o ID: 5
+2025-08-03 23:21:34.210  INFO 14236 --- [http-nio-8080-exec-4] b.c.f.b.services.LivroService            : Buscando livro com o ID: 5
+2025-08-03 23:21:34.211  INFO 14236 --- [http-nio-8080-exec-4] b.c.f.b.services.LivroService            : Livro encontrado com o ID: 5
+2025-08-03 23:21:34.211  INFO 14236 --- [http-nio-8080-exec-4] b.c.f.b.services.LivroService            : Atualizando livro com o ID: 5
+2025-08-03 23:21:34.211  INFO 14236 --- [http-nio-8080-exec-4] b.c.f.b.services.LivroService            : Livro atualizado com sucesso: Java e foda!
+2025-08-03 23:21:57.693  INFO 14236 --- [http-nio-8080-exec-5] b.c.f.b.services.LivroService            : Listando todos os livros de todas as categorias
+2025-08-03 23:21:57.693  INFO 14236 --- [http-nio-8080-exec-5] b.c.f.b.services.CategoriaService        : Listando todas as categorias
+2025-08-03 23:21:57.696  INFO 14236 --- [http-nio-8080-exec-5] b.c.f.b.services.CategoriaService        : Total de categorias encontradas: 20
+2025-08-03 23:21:57.707  INFO 14236 --- [http-nio-8080-exec-5] b.c.f.b.services.LivroService            : Total de livros encontrados: 39
+2025-08-03 23:28:07.437  INFO 14236 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-03 23:28:07.752 ERROR 14236 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Error thrown while acquiring connection from data source
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:188) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.checkSuspended(SessionLocal.java:1240) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.isOpen(SessionLocal.java:1173) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.waitIfExclusiveModeEnabled(SessionLocal.java:1486) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Command.executeQuery(Command.java:180) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:538) ~[h2-2.1.214.jar:2.1.214]
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:408) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712) ~[HikariCP-4.0.3.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-08-03 23:28:07.842  WARN 14236 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2025-08-03 23:28:07.843  INFO 14236 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-03 23:28:08.016  INFO 14236 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-03 23:32:55.476  INFO 16676 --- [restartedMain] b.c.f.b.BibliotecaNoiteApplication       : Starting BibliotecaNoiteApplication using Java 21.0.6 on Mike with PID 16676 (E:\bibliotecaNoite\bibliotecaNoite\bibliotecaNoite\target\classes started by matth in E:\bibliotecaNoite)
+2025-08-03 23:32:55.477  INFO 16676 --- [restartedMain] b.c.f.b.BibliotecaNoiteApplication       : The following 1 profile is active: "test"
+2025-08-03 23:32:55.514  INFO 16676 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-03 23:32:55.514  INFO 16676 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-03 23:32:55.960  INFO 16676 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-03 23:32:56.001  INFO 16676 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
+2025-08-03 23:32:56.506  INFO 16676 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-08-03 23:32:56.515  INFO 16676 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-03 23:32:56.515  INFO 16676 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2025-08-03 23:32:56.582  INFO 16676 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-03 23:32:56.582  INFO 16676 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1067 ms
+2025-08-03 23:32:56.604  INFO 16676 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-03 23:32:56.750  INFO 16676 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-03 23:32:56.761  INFO 16676 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testbn'
+2025-08-03 23:32:56.887  INFO 16676 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-03 23:32:56.933  INFO 16676 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-08-03 23:32:57.048  INFO 16676 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-08-03 23:32:57.130  INFO 16676 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-08-03 23:32:57.531  INFO 16676 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-08-03 23:32:57.536  INFO 16676 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-03 23:32:58.000  WARN 16676 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-03 23:32:58.258  INFO 16676 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-03 23:32:58.290  INFO 16676 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-08-03 23:32:58.299  INFO 16676 --- [restartedMain] b.c.f.b.BibliotecaNoiteApplication       : Started BibliotecaNoiteApplication in 3.13 seconds (JVM running for 3.499)
+2025-08-03 23:33:04.456  INFO 16676 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-03 23:33:04.456  INFO 16676 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-03 23:33:04.457  INFO 16676 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-03 23:33:04.478  INFO 16676 --- [http-nio-8080-exec-2] b.c.f.b.services.LivroService            : Listando todos os livros de todas as categorias
+2025-08-03 23:33:04.482  INFO 16676 --- [http-nio-8080-exec-2] b.c.f.b.services.CategoriaService        : Listando todas as categorias
+2025-08-03 23:33:04.546  INFO 16676 --- [http-nio-8080-exec-2] b.c.f.b.services.CategoriaService        : Total de categorias encontradas: 20
+2025-08-03 23:33:04.564  INFO 16676 --- [http-nio-8080-exec-2] b.c.f.b.services.LivroService            : Total de livros encontrados: 40
+2025-08-03 23:33:26.085  INFO 16676 --- [http-nio-8080-exec-3] b.c.f.b.services.LivroService            : Buscando livro com o ID: 2
+2025-08-03 23:33:26.090  INFO 16676 --- [http-nio-8080-exec-3] b.c.f.b.services.LivroService            : Livro encontrado com o ID: 2
+2025-08-03 23:33:26.090  INFO 16676 --- [http-nio-8080-exec-3] b.c.f.b.services.LivroService            : Atualizando livro com o ID: 2
+2025-08-03 23:33:26.090  INFO 16676 --- [http-nio-8080-exec-3] b.c.f.b.services.LivroService            : Livro atualizado com sucesso: Java e foda!
+2025-08-03 23:33:47.006  INFO 16676 --- [http-nio-8080-exec-4] b.c.f.b.services.LivroService            : Listando todos os livros de todas as categorias
+2025-08-03 23:33:47.007  INFO 16676 --- [http-nio-8080-exec-4] b.c.f.b.services.CategoriaService        : Listando todas as categorias
+2025-08-03 23:33:47.009  INFO 16676 --- [http-nio-8080-exec-4] b.c.f.b.services.CategoriaService        : Total de categorias encontradas: 20
+2025-08-03 23:33:47.020  INFO 16676 --- [http-nio-8080-exec-4] b.c.f.b.services.LivroService            : Total de livros encontrados: 40
+2025-08-03 23:34:07.258  INFO 16676 --- [http-nio-8080-exec-5] b.c.f.b.services.LivroService            : Buscando livro com o ID: 2
+2025-08-03 23:34:07.260  INFO 16676 --- [http-nio-8080-exec-5] b.c.f.b.services.LivroService            : Livro encontrado com o ID: 2
+2025-08-03 23:34:07.260  INFO 16676 --- [http-nio-8080-exec-5] b.c.f.b.services.LivroService            : Atualizando livro com o ID: 2
+2025-08-03 23:34:07.260  INFO 16676 --- [http-nio-8080-exec-5] b.c.f.b.services.LivroService            : Livro atualizado com sucesso: Java e foda!
+2025-08-03 23:34:08.771  INFO 16676 --- [http-nio-8080-exec-6] b.c.f.b.services.LivroService            : Buscando livro com o ID: 2
+2025-08-03 23:34:08.772  INFO 16676 --- [http-nio-8080-exec-6] b.c.f.b.services.LivroService            : Livro encontrado com o ID: 2
+2025-08-03 23:34:08.772  INFO 16676 --- [http-nio-8080-exec-6] b.c.f.b.services.LivroService            : Atualizando livro com o ID: 2
+2025-08-03 23:34:08.772  INFO 16676 --- [http-nio-8080-exec-6] b.c.f.b.services.LivroService            : Livro atualizado com sucesso: Java e foda!
+2025-08-03 23:35:12.891  INFO 16676 --- [http-nio-8080-exec-9] b.c.f.b.services.LivroService            : Listando todos os livros de todas as categorias
+2025-08-03 23:35:12.891  INFO 16676 --- [http-nio-8080-exec-9] b.c.f.b.services.CategoriaService        : Listando todas as categorias
+2025-08-03 23:35:12.894  INFO 16676 --- [http-nio-8080-exec-9] b.c.f.b.services.CategoriaService        : Total de categorias encontradas: 20
+2025-08-03 23:35:12.903  INFO 16676 --- [http-nio-8080-exec-9] b.c.f.b.services.LivroService            : Total de livros encontrados: 40
+2025-08-03 23:36:06.926  INFO 16676 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-03 23:36:07.128 ERROR 16676 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Error thrown while acquiring connection from data source
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:188) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.checkSuspended(SessionLocal.java:1240) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.transitionToState(SessionLocal.java:1232) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.waitIfExclusiveModeEnabled(SessionLocal.java:1480) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Command.executeQuery(Command.java:180) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:538) ~[h2-2.1.214.jar:2.1.214]
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:408) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712) ~[HikariCP-4.0.3.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-08-03 23:36:07.330  WARN 16676 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2025-08-03 23:36:07.330  INFO 16676 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-03 23:36:07.394  INFO 16676 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-03 23:36:09.432  INFO 15144 --- [restartedMain] b.c.f.b.BibliotecaNoiteApplication       : Starting BibliotecaNoiteApplication using Java 21.0.6 on Mike with PID 15144 (E:\bibliotecaNoite\bibliotecaNoite\bibliotecaNoite\target\classes started by matth in E:\bibliotecaNoite)
+2025-08-03 23:36:09.433  INFO 15144 --- [restartedMain] b.c.f.b.BibliotecaNoiteApplication       : The following 1 profile is active: "test"
+2025-08-03 23:36:09.470  INFO 15144 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-03 23:36:09.471  INFO 15144 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-03 23:36:09.922  INFO 15144 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-03 23:36:09.965  INFO 15144 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 2 JPA repository interfaces.
+2025-08-03 23:36:10.471  INFO 15144 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-08-03 23:36:10.481  INFO 15144 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-03 23:36:10.481  INFO 15144 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2025-08-03 23:36:10.546  INFO 15144 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-03 23:36:10.546  INFO 15144 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1075 ms
+2025-08-03 23:36:10.568  INFO 15144 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-03 23:36:10.716  INFO 15144 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-03 23:36:10.725  INFO 15144 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testbn'
+2025-08-03 23:36:10.854  INFO 15144 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-03 23:36:10.905  INFO 15144 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-08-03 23:36:11.022  INFO 15144 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-08-03 23:36:11.110  INFO 15144 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-08-03 23:36:11.510  INFO 15144 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-08-03 23:36:11.516  INFO 15144 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-03 23:36:11.983  WARN 15144 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-03 23:36:12.245  INFO 15144 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-03 23:36:12.272  INFO 15144 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-08-03 23:36:12.281  INFO 15144 --- [restartedMain] b.c.f.b.BibliotecaNoiteApplication       : Started BibliotecaNoiteApplication in 3.163 seconds (JVM running for 3.533)
+2025-08-03 23:36:16.909  INFO 15144 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-03 23:36:16.909  INFO 15144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-03 23:36:16.910  INFO 15144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-03 23:36:16.930  INFO 15144 --- [http-nio-8080-exec-1] b.c.f.b.services.LivroService            : Listando todos os livros de todas as categorias
+2025-08-03 23:36:16.934  INFO 15144 --- [http-nio-8080-exec-1] b.c.f.b.services.CategoriaService        : Listando todas as categorias
+2025-08-03 23:36:16.999  INFO 15144 --- [http-nio-8080-exec-1] b.c.f.b.services.CategoriaService        : Total de categorias encontradas: 20
+2025-08-03 23:36:17.016  INFO 15144 --- [http-nio-8080-exec-1] b.c.f.b.services.LivroService            : Total de livros encontrados: 40
+2025-08-03 23:36:31.292  INFO 15144 --- [http-nio-8080-exec-4] b.c.f.b.services.LivroService            : Buscando livro com o ID: 1
+2025-08-03 23:36:31.295  INFO 15144 --- [http-nio-8080-exec-4] b.c.f.b.services.LivroService            : Livro encontrado com o ID: 1
+2025-08-03 23:36:31.296  INFO 15144 --- [http-nio-8080-exec-4] b.c.f.b.services.LivroService            : Atualizando livro com o ID: 1
+2025-08-03 23:36:31.296  INFO 15144 --- [http-nio-8080-exec-4] b.c.f.b.services.LivroService            : Livro atualizado com sucesso: Java e foda!
+2025-08-03 23:36:46.188  INFO 15144 --- [http-nio-8080-exec-3] b.c.f.b.services.LivroService            : Buscando livro com o ID: 1
+2025-08-03 23:36:46.189  INFO 15144 --- [http-nio-8080-exec-3] b.c.f.b.services.LivroService            : Livro encontrado com o ID: 1
+2025-08-03 23:36:48.740  INFO 15144 --- [http-nio-8080-exec-5] b.c.f.b.services.LivroService            : Listando todos os livros de todas as categorias
+2025-08-03 23:36:48.740  INFO 15144 --- [http-nio-8080-exec-5] b.c.f.b.services.CategoriaService        : Listando todas as categorias
+2025-08-03 23:36:48.743  INFO 15144 --- [http-nio-8080-exec-5] b.c.f.b.services.CategoriaService        : Total de categorias encontradas: 20
+2025-08-03 23:36:48.754  INFO 15144 --- [http-nio-8080-exec-5] b.c.f.b.services.LivroService            : Total de livros encontrados: 39
+2025-08-03 23:36:54.894  INFO 15144 --- [http-nio-8080-exec-6] b.c.f.b.services.LivroService            : Buscando livro com o ID: 1
+2025-08-03 23:36:54.895  INFO 15144 --- [http-nio-8080-exec-6] b.c.f.b.services.LivroService            : Livro encontrado com o ID: 1
+2025-08-03 23:37:02.290  INFO 15144 --- [http-nio-8080-exec-7] b.c.f.b.services.LivroService            : Buscando livro com o ID: 2
+2025-08-03 23:37:02.291  INFO 15144 --- [http-nio-8080-exec-7] b.c.f.b.services.LivroService            : Livro encontrado com o ID: 2
+2025-08-03 23:37:04.843  INFO 15144 --- [http-nio-8080-exec-8] b.c.f.b.services.LivroService            : Buscando livro com o ID: 3
+2025-08-03 23:37:04.844  INFO 15144 --- [http-nio-8080-exec-8] b.c.f.b.services.LivroService            : Livro encontrado com o ID: 3
+2025-08-03 23:37:07.612  INFO 15144 --- [http-nio-8080-exec-9] b.c.f.b.services.LivroService            : Buscando livro com o ID: 40
+2025-08-03 23:37:07.613  INFO 15144 --- [http-nio-8080-exec-9] b.c.f.b.services.LivroService            : Livro encontrado com o ID: 40
+2025-08-03 23:37:11.219  INFO 15144 --- [http-nio-8080-exec-10] b.c.f.b.services.LivroService            : Buscando livro com o ID: 41
+2025-08-03 23:37:11.221 ERROR 15144 --- [http-nio-8080-exec-10] b.c.f.b.services.LivroService            : Livro não encontrado com o ID: 41
+2025-08-03 23:37:11.227  WARN 15144 --- [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [br.com.fuctura.bibliotecaNoite.exceptions.NotFoundException: Livro não encontrado com o ID: 41]
+2025-08-03 23:37:14.365  INFO 15144 --- [http-nio-8080-exec-2] b.c.f.b.services.LivroService            : Buscando livro com o ID: 1
+2025-08-03 23:37:14.367  INFO 15144 --- [http-nio-8080-exec-2] b.c.f.b.services.LivroService            : Livro encontrado com o ID: 1
+2025-08-03 23:37:17.442  INFO 15144 --- [http-nio-8080-exec-1] b.c.f.b.services.LivroService            : Listando todos os livros de todas as categorias
+2025-08-03 23:37:17.443  INFO 15144 --- [http-nio-8080-exec-1] b.c.f.b.services.CategoriaService        : Listando todas as categorias
+2025-08-03 23:37:17.445  INFO 15144 --- [http-nio-8080-exec-1] b.c.f.b.services.CategoriaService        : Total de categorias encontradas: 20
+2025-08-03 23:37:17.454  INFO 15144 --- [http-nio-8080-exec-1] b.c.f.b.services.LivroService            : Total de livros encontrados: 39
+2025-08-03 23:38:13.877  INFO 15144 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-03 23:38:14.082 ERROR 15144 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Error thrown while acquiring connection from data source
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:188) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1375) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.getAutoCommit(JdbcConnection.java:423) ~[h2-2.1.214.jar:2.1.214]
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:412) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712) ~[HikariCP-4.0.3.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-08-03 23:38:14.280  WARN 15144 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2025-08-03 23:38:14.280  INFO 15144 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-03 23:38:14.343  INFO 15144 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -22,8 +22,6 @@ public class LivroDto implements Serializable {
     @NotNull(message = "A sinopse do livro não pode ser nula.")
     @Size(min = 10, max = 500, message = "A sinopse deve ter entre 10 e 500 caracteres.")
     private String sinopse;
-    @NotNull(message = "A categoria do livro não pode ser nula.")
-    private Categoria categoria;
     @NotNull(message = "O tamanho do livro não pode ser nulo.")
     private Tamanho tamanho;
 
@@ -32,16 +30,16 @@ public class LivroDto implements Serializable {
     }
 
     // Construtor com parâmetros
-    public LivroDto(Integer id, Tamanho tamanho, Categoria categoria, String sinopse, String autor, String titulo) {
+    public LivroDto(Integer id, Tamanho tamanho, String sinopse, String autor, String titulo) {
         this.id = id;
         this.tamanho = tamanho;
-        this.categoria = categoria;
         this.sinopse = sinopse;
         this.autor = autor;
         this.titulo = titulo;
     }
 
     // Getters e Setters
+
     public Integer getId() {
         return id;
     }
@@ -56,14 +54,6 @@ public class LivroDto implements Serializable {
 
     public void setTamanho(Tamanho tamanho) {
         this.tamanho = tamanho;
-    }
-
-    public Categoria getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(Categoria categoria) {
-        this.categoria = categoria;
     }
 
     public String getSinopse() {

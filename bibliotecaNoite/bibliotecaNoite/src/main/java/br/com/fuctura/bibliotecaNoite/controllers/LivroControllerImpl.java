@@ -3,6 +3,7 @@ package br.com.fuctura.bibliotecaNoite.controllers;
 import br.com.fuctura.bibliotecaNoite.controllers.interfaces.LivroController;
 import br.com.fuctura.bibliotecaNoite.dtos.LivroDto;
 import br.com.fuctura.bibliotecaNoite.models.Livro;
+import br.com.fuctura.bibliotecaNoite.services.CategoriaService;
 import br.com.fuctura.bibliotecaNoite.services.LivroService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -58,10 +59,10 @@ public class LivroControllerImpl implements LivroController {
     @PutMapping("/{id}") // Método para atualizar um livro existente
     public ResponseEntity<LivroDto> update(@Valid  @PathVariable Integer id, @RequestBody LivroDto livroDto) {
         Livro livro = modelMapper.map(livroDto, Livro.class); // Converte LivroDto para Livro
-        livro.setId(id); // Define o ID
-        Livro updatedLivro = livroService.update(livro); // Chama o serviço para atualizar
-        LivroDto updatedLivroDto = modelMapper.map(updatedLivro, LivroDto.class); // Converte o livro atualizado para LivroDto
-        return ResponseEntity.ok().body(updatedLivroDto); // Retorna o LivroDto atualizado
+        livro.setId(id); // Define o ID do livro a ser atualizado
+        Livro updatedLivro = livroService.update(livro); // Chama o serviço para atualizar o livro
+        LivroDto LivroDto = modelMapper.map(updatedLivro, LivroDto.class); // Converte o livro atualizado para LivroDto
+        return ResponseEntity.ok().body(LivroDto); // Retorna o LivroDto atualizado
     }
 
     @DeleteMapping("/{id}") // Método para deletar um livro pelo ID
@@ -69,8 +70,6 @@ public class LivroControllerImpl implements LivroController {
         livroService.deleteById(id); // Chama o serviço para deletar o livro pelo ID
         return ResponseEntity.noContent().build(); // Retorna resposta sem conteúdo
     }
-
-
 
 
 }

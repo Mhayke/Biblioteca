@@ -1,5 +1,7 @@
 package br.com.fuctura.bibliotecaNoite.services;
 
+import br.com.fuctura.bibliotecaNoite.exceptions.NotFoundException;
+import br.com.fuctura.bibliotecaNoite.models.Categoria;
 import br.com.fuctura.bibliotecaNoite.models.Livro;
 import br.com.fuctura.bibliotecaNoite.repositories.LivroRepository;
 import org.slf4j.Logger;
@@ -8,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -21,16 +24,26 @@ public class LivroService {
     @Autowired
     private LivroRepository livroRepository; // Injeção de dependência do repositório de livros
 
+    @Autowired
+    private CategoriaService categoriaService; // Injeção de dependência do serviço de categorias, caso necessário
+
     // Método para listar todos os livros
     public List<Livro> findAll() {
-        log.info("Listando todos os livros"); // Loga a listagem de todos os livros
-        List<Livro> livros = livroRepository.findAll();
-        if (livros.isEmpty()) { // Verifica se não há livros
-            log.warn("Nenhum livro encontrado"); // Loga um aviso se não houver livros
-            throw new br.com.fuctura.bibliotecaNoite.exceptions.NotFoundException("Nenhum livro encontrado.");
+        log.info("Listando todos os livros de todas as categorias"); // Loga a listagem de todos os livros
+        List<Categoria> cat = categoriaService.findAll();
+        List<Livro> liv = new ArrayList<>();
+
+        for (Categoria categoria : cat) { // Itera sobre todas as categorias
+            if (categoria.getLivros() != null && !categoria.getLivros().isEmpty()) { // Verifica se a categoria possui livros
+                liv.addAll(categoria.getLivros()); // Adiciona os livros da categoria à lista
+            }
         }
-        log.info("Total de livros encontrados: {}", livros.size()); // Loga o total de livros encontrados
-        return livros; // Retorna a lista de livros
+        if (liv.isEmpty()) { // Verifica se não há livros
+            log.warn("Nenhum livro encontrado em nenhuma categoria"); // Loga um aviso se não houver livros
+            throw new NotFoundException("Nenhum livro encontrado em nenhuma categoria.");
+        }
+        log.info("Total de livros encontrados: {}", liv.size()); // Loga o total de livros encontrados
+        return liv;
     }
 
     // Método para buscar um livro pelo ID
@@ -70,11 +83,16 @@ public class LivroService {
 
     // Método para atualizar um livro existente
     public Livro update(Livro livro) {
-        log.info("Atualizando livro com o ID: {}", livro.getId()); // Loga a tentativa de atualizar um livro
-        if (livro.getId() == null) { // Verifica se o ID não foi informado
-            log.error("ID do livro não pode ser nulo"); // Loga o erro se o ID estiver nulo
-            throw new br.com.fuctura.bibliotecaNoite.exceptions.IllegalArgumentException("ID do livro precisa ser informado.");
+        Livro liv = findById(livro.getId()); // Busca o livro existente pelo ID
+        log.info("Atualizando livro com o ID: {}", livro.getId()); // Loga a tentativa de atualizar o livro
+        if (liv.getId() == null) { // Verifica se o ID do livro existente é nulo
+            log.error("Tentativa de atualizar livro com ID nulo: {}", livro.getId()); // Loga o erro se o ID for nulo
+            throw new br.com.fuctura.bibliotecaNoite.exceptions.IllegalArgumentException("Não é permitido atualizar um livro com ID nulo.");
         }
+        liv.setTitulo(liv.getTitulo());
+        liv.setAutor(liv.getAutor());
+        liv.setSinopse(liv.getSinopse());
+        liv.setTamanho(liv.getTamanho());
         log.info("Livro atualizado com sucesso: {}", livro.getTitulo()); // Loga o sucesso
         return livroRepository.save(livro); // Atualiza o livro no repositório
     }
