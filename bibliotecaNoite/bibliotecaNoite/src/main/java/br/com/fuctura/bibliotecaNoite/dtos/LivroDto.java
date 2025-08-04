@@ -32,13 +32,13 @@ public class LivroDto implements Serializable {
     }
 
     // Construtor com parâmetros
-    public LivroDto(Integer id, String titulo, String autor, String sinopse, Tamanho tamanho, Categoria categoria) {
+    public LivroDto(Integer id, Tamanho tamanho, Categoria categoria, String sinopse, String autor, String titulo) {
         this.id = id;
-        this.titulo = titulo;
-        this.autor = autor;
-        this.sinopse = sinopse;
         this.tamanho = tamanho;
         this.categoria = categoria;
+        this.sinopse = sinopse;
+        this.autor = autor;
+        this.titulo = titulo;
     }
 
     // Getters e Setters

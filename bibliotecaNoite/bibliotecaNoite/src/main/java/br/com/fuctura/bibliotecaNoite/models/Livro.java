@@ -26,13 +26,13 @@ public class Livro {
     public Livro() {
     }
 
-    public Livro(Integer id, String titulo, String autor, String sinopse, Tamanho tamanho, Categoria categoria) {
+    public Livro(Integer id, Tamanho tamanho, Categoria categoria, String sinopse, String autor, String titulo) {
         this.id = id;
-        this.titulo = titulo;
-        this.autor = autor;
-        this.sinopse = sinopse;
-        this.categoria = categoria;
         this.tamanho = tamanho;
+        this.categoria = categoria;
+        this.sinopse = sinopse;
+        this.autor = autor;
+        this.titulo = titulo;
     }
 
     public Integer getId() {
@@ -43,28 +43,12 @@ public class Livro {
         this.id = id;
     }
 
-    public String getTitulo() {
-        return titulo;
+    public Tamanho getTamanho() {
+        return tamanho;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
-    public String getAutor() {
-        return autor;
-    }
-
-    public void setAutor(String autor) {
-        this.autor = autor;
-    }
-
-    public String getTexto() {
-        return sinopse;
-    }
-
-    public void setTexto(String texto) {
-        this.sinopse = texto;
+    public void setTamanho(Tamanho tamanho) {
+        this.tamanho = tamanho;
     }
 
     public Categoria getCategoria() {
@@ -75,11 +59,27 @@ public class Livro {
         this.categoria = categoria;
     }
 
-    public Tamanho getTamanho() {
-        return tamanho;
+    public String getSinopse() {
+        return sinopse;
     }
 
-    public void setTamanho(Tamanho tamanho) {
-        this.tamanho = tamanho;
+    public void setSinopse(String sinopse) {
+        this.sinopse = sinopse;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 }

@@ -23,7 +23,7 @@ public class LivroControllerImpl implements LivroController {
     @Autowired
     private ModelMapper modelMapper; // Injeção de dependência do ModelMapper para conversão entre entidades e DTOs
 
-    @GetMapping
+    @GetMapping // Método para listar todos os livros
     public ResponseEntity<List<LivroDto>> findAll() {
         List<Livro> livros = livroService.findAll(); // Chama o serviço para listar todos os livros
         List<LivroDto> livroDtos = new ArrayList<>();
@@ -33,21 +33,21 @@ public class LivroControllerImpl implements LivroController {
         return ResponseEntity.ok().body(livroDtos); // Retorna a lista de Livro
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/{id}") // Método para buscar um livro pelo ID
     public ResponseEntity<LivroDto> findById(@PathVariable Integer id) {
         Livro livro = livroService.findById(id); // Chama o serviço para buscar um livro pelo ID
         LivroDto livroDto = modelMapper.map(livro, LivroDto.class); // Converte o livro para LivroDto
         return ResponseEntity.ok().body(livroDto); // Retorna o LivroDto encontrado
     }
 
-    @GetMapping("/autor/{autor}")
+    @GetMapping("/autor/{autor}") // Método para buscar um livro pelo autor
     public ResponseEntity<LivroDto> findByAutor(String autor) {
         Livro livro = livroService.findByAutor(autor); // Chama o serviço para buscar um livro pelo autor
         LivroDto livroDto = modelMapper.map(livro, LivroDto.class); // Converte o livro para LivroDto
         return ResponseEntity.ok().body(livroDto); // Retorna o LivroDto encontrado
     }
 
-    @PostMapping
+    @PostMapping // Método para criar um novo livro
     public ResponseEntity<LivroDto> save(@Valid @RequestBody LivroDto livroDto) {
         Livro livro = modelMapper.map(livroDto, Livro.class); // Converte LivroDto para Livro
         Livro savedLivro = livroService.save(livro); // Chama o serviço para salvar o livro
@@ -55,7 +55,7 @@ public class LivroControllerImpl implements LivroController {
         return ResponseEntity.ok().body(savedLivroDto); // Retorna o LivroDto salvo
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("/{id}") // Método para atualizar um livro existente
     public ResponseEntity<LivroDto> update(@Valid  @PathVariable Integer id, @RequestBody LivroDto livroDto) {
         Livro livro = modelMapper.map(livroDto, Livro.class); // Converte LivroDto para Livro
         livro.setId(id); // Define o ID
@@ -64,21 +64,13 @@ public class LivroControllerImpl implements LivroController {
         return ResponseEntity.ok().body(updatedLivroDto); // Retorna o LivroDto atualizado
     }
 
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Void> delete(@PathVariable Integer id) {
+    @DeleteMapping("/{id}") // Método para deletar um livro pelo ID
+    public ResponseEntity<Void> deleteById(@PathVariable Integer id) {
         livroService.deleteById(id); // Chama o serviço para deletar o livro pelo ID
         return ResponseEntity.noContent().build(); // Retorna resposta sem conteúdo
     }
 
-    @Override
-    public ResponseEntity<LivroDto> update(LivroDto livroDto) {
-        return null;
-    }
 
-    @Override
-    public ResponseEntity<Void> deleteById(Integer id) {
-        return null;
-    }
 
 
 }

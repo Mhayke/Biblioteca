@@ -42,66 +42,66 @@ public class DBService {
         Categoria cat19 = new Categoria(null, "Turismo", "Livros de viagens e guias turísticos");
         Categoria cat20 = new Categoria(null, "Saúde", "Livros sobre medicina");
 
-        // Categoria: Arte
-        Livro l1 = new Livro(null, "História da Arte", "E.H. Gombrich", "Uma jornada pela evolução artística", Tamanho.MEDIO, cat1);
-        Livro l2 = new Livro(null, "O Poder da Arte", "Simon Schama", "Análise de obras-primas", Tamanho.GRANDE, cat1);
-        // Categoria: Autoajuda
-        Livro l3 = new Livro(null, "O Poder do Hábito", "Charles Duhigg", "Como transformar hábitos", Tamanho.PEQUENO, cat2);
-        Livro l4 = new Livro(null, "Mindset", "Carol S. Dweck", "A nova psicologia do sucesso", Tamanho.MEDIO, cat2);
-        // Categoria: Biografia
-        Livro l5 = new Livro(null, "Steve Jobs", "Walter Isaacson", "A vida do fundador da Apple", Tamanho.GRANDE, cat3);
-        Livro l6 = new Livro(null, "Einstein: Sua Vida, Seu Universo", "Walter Isaacson", "Biografia do gênio da física", Tamanho.GRANDE, cat3);
-        // Categoria: Ciências
-        Livro l7 = new Livro(null, "Cosmos", "Carl Sagan", "Uma viagem pelo universo", Tamanho.MEDIO, cat4);
-        Livro l8 = new Livro(null, "Breves Respostas para Grandes Questões", "Stephen Hawking", "Reflexões sobre ciência", Tamanho.PEQUENO, cat4);
-        // Categoria: Direito
-        Livro l9 = new Livro(null, "Direito Constitucional", "Alexandre de Moraes", "Fundamentos do direito brasileiro", Tamanho.GRANDE, cat5);
-        Livro l10 = new Livro(null, "Manual de Direito Penal", "Luiz Regis Prado", "Princípios e legislação penal", Tamanho.MEDIO, cat5);
-        // Categoria: Economia
-        Livro l11 = new Livro(null, "Freakonomics", "Steven D. Levitt", "Economia do cotidiano", Tamanho.PEQUENO, cat6);
-        Livro l12 = new Livro(null, "O Capital no Século XXI", "Thomas Piketty", "Análise sobre desigualdade", Tamanho.GRANDE, cat6);
-        // Categoria: Fantasia
-        Livro l13 = new Livro(null, "O Senhor dos Anéis", "J.R.R. Tolkien", "A jornada do Um Anel", Tamanho.GRANDE, cat7);
-        Livro l14 = new Livro(null, "Harry Potter e a Pedra Filosofal", "J.K. Rowling", "O início da saga do bruxo", Tamanho.MEDIO, cat7);
-        // Categoria: Ficção Científica
-        Livro l15 = new Livro(null, "Duna", "Frank Herbert", "Uma aventura espacial", Tamanho.GRANDE, cat8);
-        Livro l16 = new Livro(null, "1984", "George Orwell", "Um clássico distópico", Tamanho.MEDIO, cat8);
-        // Categoria: Gastronomia
-        Livro l17 = new Livro(null, "Comida, Cozinha & Co.", "Ramsay Gordon", "Receitas e técnicas", Tamanho.MEDIO, cat9);
-        Livro l18 = new Livro(null, "Cozinha Brasileira", "Ana Luiza Trajano", "Sabores do Brasil", Tamanho.PEQUENO, cat9);
-        // Categoria: História
-        Livro l19 = new Livro(null, "Sapiens", "Yuval Noah Harari", "Uma breve história da humanidade", Tamanho.MEDIO, cat10);
-        Livro l20 = new Livro(null, "A Queda de Constantinopla", "Steven Runciman", "O fim do Império Bizantino", Tamanho.GRANDE, cat10);
-        // Categoria: Infantil
-        Livro l21 = new Livro(null, "O Pequeno Príncipe", "Antoine de Saint-Exupéry", "Uma fábula sobre amizade", Tamanho.PEQUENO, cat11);
-        Livro l22 = new Livro(null, "Alice no País das Maravilhas", "Lewis Carroll", "Aventuras de Alice", Tamanho.MEDIO, cat11);
-        // Categoria: Informática
-        Livro l23 = new Livro(null, "Engenharia de Software", "Louis V. Gerstner", "Lorem ipsum", Tamanho.GRANDE, cat12);
-        Livro l24 = new Livro(null, "Código Limpo", "Robert C. Martin", "Boas práticas de programação", Tamanho.MEDIO, cat12);
-        // Categoria: Mangá
-        Livro l25 = new Livro(null, "Death Note", "Tsugumi Ohba", "Um jogo de inteligência e morte", Tamanho.PEQUENO, cat13);
-        Livro l26 = new Livro(null, "Attack on Titan", "Hajime Isayama", "Humanos contra titãs", Tamanho.MEDIO, cat13);
-        // Categoria: Música
-        Livro l27 = new Livro(null, "A História do Rock", "Andrew Chester", "Evolução do gênero musical", Tamanho.MEDIO, cat14);
-        Livro l28 = new Livro(null, "Mozart: O Gênio da Música", "Peter Gay", "Biografia do compositor", Tamanho.PEQUENO, cat14);
-        // Categoria: Psicologia
-        Livro l29 = new Livro(null, "O Homem e Seus Símbolos", "Carl Jung", "Análise do inconsciente", Tamanho.MEDIO, cat15);
-        Livro l30 = new Livro(null, "Inteligência Emocional", "Daniel Goleman", "Como lidar com emoções", Tamanho.PEQUENO, cat15);
-        // Categoria: Religião
-        Livro l31 = new Livro(null, "O Alcorão", "Tradução de Mansour Challita", "Texto sagrado do Islã", Tamanho.GRANDE, cat16);
-        Livro l32 = new Livro(null, "Bíblia Sagrada", "Vários autores", "Livro sagrado do Cristianismo", Tamanho.GRANDE, cat16);
-        // Categoria: Romance
-        Livro l33 = new Livro(null, "Orgulho e Preconceito", "Jane Austen", "Um clássico do romance", Tamanho.MEDIO, cat17);
-        Livro l34 = new Livro(null, "A Culpa é das Estrelas", "John Green", "Uma história de amor e superação", Tamanho.PEQUENO, cat17);
-        // Categoria: Suspense
-        Livro l35 = new Livro(null, "O Silêncio dos Inocentes", "Thomas Harris", "Um thriller psicológico", Tamanho.MEDIO, cat18);
-        Livro l36 = new Livro(null, "Garota Exemplar", "Gillian Flynn", "Mistério e reviravoltas", Tamanho.PEQUENO, cat18);
-        // Categoria: Turismo
-        Livro l37 = new Livro(null, "100 Lugares para Conhecer Antes de Morrer", "Patricia Schultz", "Destinos imperdíveis", Tamanho.MEDIO, cat19);
-        Livro l38 = new Livro(null, "Europa de Mochila", "Alexandre Nobumoto", "Dicas para mochileiros", Tamanho.PEQUENO, cat19);
-        // Categoria: Saúde
-        Livro l39 = new Livro(null, "O Corpo Humano", "Bill Bryson", "Uma viagem pelo organismo", Tamanho.MEDIO, cat20);
-        Livro l40 = new Livro(null, "Medicina Interna", "Harrison", "Referência em clínica médica", Tamanho.GRANDE, cat20);
+// Categoria: Arte
+        Livro l1 = new Livro(null, Tamanho.MEDIO, cat1, "Uma jornada pela evolução artística", "E.H. Gombrich", "História da Arte");
+        Livro l2 = new Livro(null, Tamanho.GRANDE, cat1, "Análise de obras-primas", "Simon Schama", "O Poder da Arte");
+// Categoria: Autoajuda
+        Livro l3 = new Livro(null, Tamanho.PEQUENO, cat2, "Como transformar hábitos", "Charles Duhigg", "O Poder do Hábito");
+        Livro l4 = new Livro(null, Tamanho.MEDIO, cat2, "A nova psicologia do sucesso", "Carol S. Dweck", "Mindset");
+// Categoria: Biografia
+        Livro l5 = new Livro(null, Tamanho.GRANDE, cat3, "A vida do fundador da Apple", "Walter Isaacson", "Steve Jobs");
+        Livro l6 = new Livro(null, Tamanho.GRANDE, cat3, "Biografia do gênio da física", "Walter Isaacson", "Einstein: Sua Vida, Seu Universo");
+// Categoria: Ciências
+        Livro l7 = new Livro(null, Tamanho.MEDIO, cat4, "Uma viagem pelo universo", "Carl Sagan", "Cosmos");
+        Livro l8 = new Livro(null, Tamanho.PEQUENO, cat4, "Reflexões sobre ciência", "Stephen Hawking", "Breves Respostas para Grandes Questões");
+// Categoria: Direito
+        Livro l9 = new Livro(null, Tamanho.GRANDE, cat5, "Fundamentos do direito brasileiro", "Alexandre de Moraes", "Direito Constitucional");
+        Livro l10 = new Livro(null, Tamanho.MEDIO, cat5, "Princípios e legislação penal", "Luiz Regis Prado", "Manual de Direito Penal");
+// Categoria: Economia
+        Livro l11 = new Livro(null, Tamanho.PEQUENO, cat6, "Economia do cotidiano", "Steven D. Levitt", "Freakonomics");
+        Livro l12 = new Livro(null, Tamanho.GRANDE, cat6, "Análise sobre desigualdade", "Thomas Piketty", "O Capital no Século XXI");
+// Categoria: Fantasia
+        Livro l13 = new Livro(null, Tamanho.GRANDE, cat7, "A jornada do Um Anel", "J.R.R. Tolkien", "O Senhor dos Anéis");
+        Livro l14 = new Livro(null, Tamanho.MEDIO, cat7, "O início da saga do bruxo", "J.K. Rowling", "Harry Potter e a Pedra Filosofal");
+// Categoria: Ficção Científica
+        Livro l15 = new Livro(null, Tamanho.GRANDE, cat8, "Uma aventura espacial", "Frank Herbert", "Duna");
+        Livro l16 = new Livro(null, Tamanho.MEDIO, cat8, "Um clássico distópico", "George Orwell", "1984");
+// Categoria: Gastronomia
+        Livro l17 = new Livro(null, Tamanho.MEDIO, cat9, "Receitas e técnicas", "Ramsay Gordon", "Comida, Cozinha & Co.");
+        Livro l18 = new Livro(null, Tamanho.PEQUENO, cat9, "Sabores do Brasil", "Ana Luiza Trajano", "Cozinha Brasileira");
+// Categoria: História
+        Livro l19 = new Livro(null, Tamanho.MEDIO, cat10, "Uma breve história da humanidade", "Yuval Noah Harari", "Sapiens");
+        Livro l20 = new Livro(null, Tamanho.GRANDE, cat10, "O fim do Império Bizantino", "Steven Runciman", "A Queda de Constantinopla");
+// Categoria: Infantil
+        Livro l21 = new Livro(null, Tamanho.PEQUENO, cat11, "Uma fábula sobre amizade", "Antoine de Saint-Exupéry", "O Pequeno Príncipe");
+        Livro l22 = new Livro(null, Tamanho.MEDIO, cat11, "Aventuras de Alice", "Lewis Carroll", "Alice no País das Maravilhas");
+// Categoria: Informática
+        Livro l23 = new Livro(null, Tamanho.GRANDE, cat12, "Lorem ipsum", "Louis V. Gerstner", "Engenharia de Software");
+        Livro l24 = new Livro(null, Tamanho.MEDIO, cat12, "Boas práticas de programação", "Robert C. Martin", "Código Limpo");
+// Categoria: Mangá
+        Livro l25 = new Livro(null, Tamanho.PEQUENO, cat13, "Um jogo de inteligência e morte", "Tsugumi Ohba", "Death Note");
+        Livro l26 = new Livro(null, Tamanho.MEDIO, cat13, "Humanos contra titãs", "Hajime Isayama", "Attack on Titan");
+// Categoria: Música
+        Livro l27 = new Livro(null, Tamanho.MEDIO, cat14, "Evolução do gênero musical", "Andrew Chester", "A História do Rock");
+        Livro l28 = new Livro(null, Tamanho.PEQUENO, cat14, "Biografia do compositor", "Peter Gay", "Mozart: O Gênio da Música");
+// Categoria: Psicologia
+        Livro l29 = new Livro(null, Tamanho.MEDIO, cat15, "Análise do inconsciente", "Carl Jung", "O Homem e Seus Símbolos");
+        Livro l30 = new Livro(null, Tamanho.PEQUENO, cat15, "Como lidar com emoções", "Daniel Goleman", "Inteligência Emocional");
+// Categoria: Religião
+        Livro l31 = new Livro(null, Tamanho.GRANDE, cat16, "Texto sagrado do Islã", "Tradução de Mansour Challita", "O Alcorão");
+        Livro l32 = new Livro(null, Tamanho.GRANDE, cat16, "Livro sagrado do Cristianismo", "Vários autores", "Bíblia Sagrada");
+// Categoria: Romance
+        Livro l33 = new Livro(null, Tamanho.MEDIO, cat17, "Um clássico do romance", "Jane Austen", "Orgulho e Preconceito");
+        Livro l34 = new Livro(null, Tamanho.PEQUENO, cat17, "Uma história de amor e superação", "John Green", "A Culpa é das Estrelas");
+// Categoria: Suspense
+        Livro l35 = new Livro(null, Tamanho.MEDIO, cat18, "Um thriller psicológico", "Thomas Harris", "O Silêncio dos Inocentes");
+        Livro l36 = new Livro(null, Tamanho.PEQUENO, cat18, "Mistério e reviravoltas", "Gillian Flynn", "Garota Exemplar");
+// Categoria: Turismo
+        Livro l37 = new Livro(null, Tamanho.MEDIO, cat19, "Destinos imperdíveis", "Patricia Schultz", "100 Lugares para Conhecer Antes de Morrer");
+        Livro l38 = new Livro(null, Tamanho.PEQUENO, cat19, "Dicas para mochileiros", "Alexandre Nobumoto", "Europa de Mochila");
+// Categoria: Saúde
+        Livro l39 = new Livro(null, Tamanho.MEDIO, cat20, "Uma viagem pelo organismo", "Bill Bryson", "O Corpo Humano");
+        Livro l40 = new Livro(null, Tamanho.GRANDE, cat20, "Referência em clínica médica", "Harrison", "Medicina Interna");
 
 
         // Associando livros às categorias
